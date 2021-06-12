@@ -62,9 +62,9 @@ static char	**ft_allocate(char **split, const char *s, char c, size_t wc)
 	size_t		wordlen;
 	size_t		i;
 	size_t		j;
+	
 	i = 0;
 	j = 0;
-	
 	while (s[i] != 0 && j < wc)
 	{
 		if (s[i] != c)
