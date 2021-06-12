@@ -15,8 +15,8 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	if (ft_strlen(s1) + 1 < n && ft_strlen(s1) < ft_strlen(s2))
-		return (memcmp(s1, s2, ft_strlen(s1) + 1));
+		return (ft_memcmp(s1, s2, ft_strlen(s1) + 1));
 	if (ft_strlen(s2) + 1 < n)
-		return (memcmp(s1, s2, ft_strlen(s2) + 1));
-	return (memcmp(s1, s2, n));
+		return (ft_memcmp(s1, s2, ft_strlen(s2) + 1));
+	return (ft_memcmp(s1, s2, n));
 }
